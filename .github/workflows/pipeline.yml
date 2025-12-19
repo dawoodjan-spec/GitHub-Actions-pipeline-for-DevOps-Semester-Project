@@ -22,7 +22,7 @@ jobs:
       with:
         args: >
           -Dsonar.projectKey=devops-phase2
-          -Dsonar.organization=YOUR_REAL_ORG_HERE
+          -Dsonar.organization=dawoodjan-spec
           -Dsonar.host.url=https://sonarcloud.io
 
     - name: Run Automated Tests
