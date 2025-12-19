@@ -21,7 +21,7 @@ jobs:
       with:
         args: >
           -Dsonar.projectKey=devops-phase2
-          -Dsonar.organization=YOUR_SONAR_ORG
+          -Dsonar.organization=dawoodjan-spec
           -Dsonar.host.url=https://sonarcloud.io
 
     - name: Run Automated Tests
@@ -45,7 +45,7 @@ jobs:
       uses: docker/login-action@v3
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKER_HUB_TOKEN }}
+        password: ${{ secrets.DOCKER_TOKEN }}
 
     - name: Push Docker Image
       run: |
